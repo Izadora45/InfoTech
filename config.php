@@ -1,12 +1,12 @@
 <?php
 
 define('BASE_DIR', dirname(__FILE__, 2)); // é o barra onde começa o projeto BASE_DIR
-define('VIEW', BASE_DIR . '/View');
+define('VIEW', BASE_DIR . '/InfoTech/View');
 
-$__ENV['db']['host'] = ['localhost'];
-$__ENV['db']['user'] = ['root'];
-$__ENV['db']['pass'] = [''];
-$__ENV['db']['database'] = ['lojati'];
+$_ENV['db']['host'] = 'localhost';
+$_ENV['db']['user'] = 'root';
+$_ENV['db']['pass'] = '';
+$_ENV['db']['database'] = 'infotech';
 ?>
 
 <!-- É para rotas  -->

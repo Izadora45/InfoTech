@@ -1,14 +1,21 @@
 <?php
 
-namespace InfoTech\Controller;// name space essa classe eu estou dentro desse pacote que chama infotech 
+namespace InfoTech\Controller;
 
 class ProdutoController
 {
     public string $nome;
     public string $preco;
 
-    public static function hello()
+    
+    public static function cadastrar()
     {
-        echo "Olá vindo da class Produto";
+        include VIEW . '/Produto/cadastrar_produto.php';
+    }
+
+   
+    public static function listar()
+    {
+        include VIEW . '/Produto/listar_produto.php';
     }
 }
