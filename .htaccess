@@ -1,0 +1,6 @@
+# Enable URL
+RewriteEngine On
+RewCond %{REQUEST_FILENAME} !-f
+RewCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php?path=$1 [NC,L,QSA]
+FallbackResource /infotech/index.php
